@@ -104,6 +104,15 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Assets\Bike.jpg" />
+    <Content Include="Assets\cyclepath.JPG" />
+    <Content Include="Assets\cyclepathLogo.jpg" />
+    <Content Include="Assets\Paint.jpg" />
+    <Content Include="Assets\pathType.png" />
+    <Content Include="Assets\Residential Fence.png" />
+    <Content Include="Assets\Signs.png" />
+    <Content Include="Assets\Steel Guardrail.jpg" />
+    <Content Include="Assets\timber post.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Guardrails.xaml.cs">
@@ -134,12 +143,6 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="CyclePaths.Windows_TemporaryKey.pfx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Assets\Logo.scale-100.png" />
-    <Content Include="Assets\SmallLogo.scale-100.png" />
-    <Content Include="Assets\SplashScreen.scale-100.png" />
-    <Content Include="Assets\StoreLogo.scale-100.png" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Guardrails.xaml">
