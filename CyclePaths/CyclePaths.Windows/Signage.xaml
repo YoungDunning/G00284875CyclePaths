@@ -7,7 +7,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="Firebrick">
+        <TextBlock FontSize="45" Foreground="Chocolate" FontStyle="Italic" FontWeight="ExtraBold" Text="Signage" Margin="13,10,1068,702" />
+
+        <!--Images-->
+        <Image Source="Assets/Signs.png" Margin="793,251,334,325"/>
+        <Image Source="Assets/Bike.jpg" Margin="793,112,334,517"/>
+
+        <!--Headings-->
+        <TextBlock Text="Number of Signs" Margin="17,83,1167,662" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20"/>
+        <TextBlock Text="Embodied Carbon" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="199,86,974,662" />
+        <TextBlock Text="Cost" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="419,86,865,662" />
+
+
+        <!--Signs-->
+        <TextBox Margin="17,120,1228,616" x:Name="txtSignNum"/>
+        <TextBlock x:Name="txtSignEC" Text="   " FontSize="15" Margin="199,120,1081,627"/>
+        <TextBlock Text="tCO2e" FontSize="15" Margin="306,120,974,627"/>
+        <TextBlock x:Name="txtSignCost" Text="   " FontSize="15" Margin="419,120,861,627"/>
+
+        <!--Buttons-->
+        <Button Content="Calculate" Width="148" Margin="17,213,0,517" Click="btnCalc"/>
+        <Button Content="Back" Margin="10,702,0,10" Width="155" FontWeight="Bold" FontStyle="Italic" FontSize="15" Click="BackBtn" Height="56" />
+        <Button Content="Paint" FontWeight="Bold" Width="155" FontStyle="Italic" FontSize="15" Click="paintBtn" Margin="170,702,0,10" Height="56"/>
+
 
     </Grid>
 </Page>

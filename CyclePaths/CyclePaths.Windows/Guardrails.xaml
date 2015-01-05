@@ -7,7 +7,103 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Grid Background="Firebrick">
+
+        <TextBlock FontSize="45" Foreground="Chocolate" FontStyle="Italic" FontWeight="ExtraBold" Text="Guardrails" Margin="13,10,1068,702" />
+
+        <Image Source="Assets/Steel Guardrail.jpg" Margin="1090,83,37,525"/>
+        <Image Source="Assets/timber post.jpg" Margin="1090,243,37,346"/>
+        <Image Source="Assets/Residential Fence.png" Margin="1090,422,37,167"/>
+
+        <TextBlock Text="Rail Type" Margin="17,83,1228,662" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20"/>
+        <TextBlock Text="Distance(m)" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="303,83,942,665" />
+        <TextBlock Text="Embodied Carbon" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="516,83,668,665" />
+        <TextBlock Text="Cost(€)" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="778,83,467,665" />
+
+
+
+
+        <!--Steel Guardrail-->
+        <TextBlock Text="Steel Guardrail" FontWeight="SemiBold" FontSize="18" Margin="17,137,1221,610"/>
+        <TextBox Margin="303,126,942,610" x:Name="txtSteel"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="620,137,660,610"/>
+        <TextBlock x:Name="txtSteelEC" Text="   " FontSize="18" Margin="516,137,751,610"/>
+        <TextBlock x:Name="txtSteelCost" Text=" " FontSize="18" Margin="778,137,448,610"/>
+
+        <!--Rumble Strip-->
+        <TextBlock Text="Rumble Strip" FontWeight="SemiBold" Margin="17,174,1172,573" FontSize="18"/>
+        <TextBox Margin="303,163,942,573" x:Name="txtRumble"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="620,174,660,573"/>
+        <TextBlock x:Name="txtRumbleEC" Text="  " FontSize="18" Margin="516,174,751,573"/>
+        <TextBlock x:Name="txtRumbleCost" Text="    " FontSize="18" Margin="778,174,448,573"/>
+
+        <!--Residential Fence(one side)-->
+        <TextBlock Text="Residential Fence(one side)" FontWeight="SemiBold" Margin="17,211,1118,536"  FontSize="18"/>
+        <TextBox Margin="303,200,942,536" x:Name="txtRes1"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="620,211,660,536"/>
+        <TextBlock x:Name="txtRes1EC" Text="    " FontSize="18" Margin="516,211,751,536"/>
+        <TextBlock x:Name="txtRes1Cost" Text="  " FontSize="18" Margin="778,211,448,536"/>
+
+        <!--Residential Fence(both sides)-->
+        <TextBlock Text="Residential Fence(both sides)" FontWeight="SemiBold" Margin="17,248,1100,499" FontSize="18" />
+        <TextBox Margin="303,237,942,499" x:Name="txtRes2"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="620,248,660,499"/>
+        <TextBlock x:Name="txtRes2EC" Text="    " FontSize="18" Margin="516,248,751,499"/>
+        <TextBlock x:Name="txtRes2Cost" Text="  " FontSize="18" Margin="778,248,448,499"/>
+
+        <!--Agricultural Fence(one side)-->
+        <TextBlock Text="Agricultural Fence(one side)" FontWeight="SemiBold" Margin="17,285,1089,462" FontSize="18"/>
+        <TextBox Margin="303,274,942,462" x:Name="txtArg1"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="620,285,660,462"/>
+        <TextBlock x:Name="txtArg1EC" Text="    " FontSize="18" Margin="516,285,751,462"/>
+        <TextBlock x:Name="txtArg1Cost" Text="  " FontSize="18" Margin="778,285,448,462"/>
+
+        <!--Agricultural Fence(both sides)-->
+        <TextBlock Text="Agricultural Fence(both sides)" FontWeight="SemiBold" Margin="17,322,1100,425" FontSize="18"/>
+        <TextBox Margin="303,311,942,425" x:Name="txtArg2"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="620,322,660,425"/>
+        <TextBlock x:Name="txtArg2EC" Text="    " FontSize="18" Margin="516,322,751,425"/>
+        <TextBlock x:Name="txtArg2Cost" Text="  " FontSize="18" Margin="778,322,448,425"/>
+
+        <!--Mesh/Concrete Fence(one side)-->
+        <TextBlock Text="Mesh/Concrete Fence(one side)" FontWeight="SemiBold" Margin="17,359,1089,388"  FontSize="18"/>
+        <TextBox Margin="303,348,942,388" x:Name="txtMesh1"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="620,359,660,388"/>
+        <TextBlock x:Name="txtMesh1EC" Text="   " FontSize="18" Margin="516,359,751,388"/>
+        <TextBlock x:Name="txtMesh1Cost" Text=" " FontSize="18" Margin="778,359,448,388"/>
+
+        <!--Mesh/Concrete Fence(both sides)-->
+        <TextBlock Text="Mesh/Concrete Fence(both sides)" FontWeight="SemiBold" Margin="17,396,1077,351" FontSize="18" />
+        <TextBox Margin="303,385,942,351" x:Name="txtMesh2"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="620,396,660,351"/>
+        <TextBlock x:Name="txtMesh2EC" Text="   " FontSize="18" Margin="516,396,751,351"/>
+        <TextBlock x:Name="txtMesh2Cost" Text=" " FontSize="18" Margin="778,396,448,351"/>
+
+        <!--Timber Post and Rail(one side)-->
+        <TextBlock Text="Timber Post and Rail(one side)" FontWeight="SemiBold" Margin="17,433,1089,314" FontSize="18"/>
+        <TextBox Margin="303,422,942,314" x:Name="txtTimber1"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="620,433,660,314"/>
+        <TextBlock x:Name="txtTimber1EC" Text=" " FontSize="18" Margin="516,433,751,314"/>
+        <TextBlock x:Name="txtTimber1Cost" Text="   " FontSize="18" Margin="778,433,448,314"/>
+
+        <!--Timber Post and Rail(both sides)-->
+        <TextBlock Text="Timber Post and Rail(both sides)" FontWeight="SemiBold" Margin="17,470,1077,277" FontSize="18"/>
+        <TextBox Margin="303,459,942,277" x:Name="txtTimber2"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="620,470,660,277"/>
+        <TextBlock x:Name="txtTimber2EC" Text=" " FontSize="18" Margin="516,470,751,277"/>
+        <TextBlock x:Name="txtTimber2Cost" Text="   " FontSize="18" Margin="778,470,448,277"/>
+
+        <!--Totals-->
+        <TextBlock Text="Totals:" Margin="17,607,1228,138" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20"/>
+        <TextBlock Text="tCO2e" FontSize="20" Margin="620,609,660,138"/>
+        <TextBlock x:Name="txtTotalEC" Text=" " FontSize="20" Margin="516,609,751,138"/>
+        <TextBlock x:Name="txtTotalCost" Text="   " FontSize="20" Margin="778,609,448,138"/>
+
+        <!--Buttons-->
+        <Button Content="Calculate" Margin="17,516,0,214"  Width="142" Click="btnCalc"/>
+        <Button Content="Back" Margin="10,702,0,10" Width="155" FontWeight="Bold" FontStyle="Italic" FontSize="15" Click="backBtn" Height="56" />
+        <Button Content="Signage" FontWeight="Bold" Width="155" FontStyle="Italic" FontSize="15" Click="signBtn" Margin="170,702,0,10" Height="56"/>
 
     </Grid>
 </Page>

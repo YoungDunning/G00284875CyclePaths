@@ -7,7 +7,59 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="Firebrick">
+        <TextBlock FontSize="45" Foreground="Chocolate" FontStyle="Italic" FontWeight="ExtraBold" Text="Material Transport" Margin="13,10,921,702" />
+
+        <TextBlock Text="Material" Margin="11,75,1221,670" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20"/>
+        <TextBlock Text="Distance" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="298,78,921,670" />
+        <TextBlock Text="Mass of Material" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="445,78,755,670" />
+        <TextBlock Text="EC to site" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="667,78,602,670" />
+        <TextBlock Text="EC return" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="828,75,430,670" />
+        <TextBlock Text="Total EC Per Material" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="1009,75,132,670" />
+
+
+        <Button x:Name="btnBack" Click="PathType" Content="Back" Margin="10,702,0,10" Height="56" Width="155" />
+        <Button x:Name="GuardBtn" Click="Guardrails" Content="Guardrails" Margin="170,702,0,10" Height="56" Width="155" />
+
+        <Button Content="Calculate" Margin="42,336,0,394"  Width="142" Click="btnCalc"/>
+
+        <!--Surface Material Transport -->
+        <TextBlock Text="Surface Material Transport" HorizontalAlignment="Left" FontSize="18" FontWeight="Bold"   Margin="10,119,0,627"/>
+        <TextBox x:Name="txtSurfMat" Margin="298,119,960,617" Height="10" Width="108"/>
+        <TextBlock  FontSize="15" x:Name="txtSurfMatMass" FontWeight="Bold" Text="   " Margin="445,119,755,617"/>
+        <TextBlock  FontSize="15" x:Name="txtSurfMatTo" FontWeight="Bold" Text="   " Margin="667,119,602,617"/>
+        <TextBlock  FontSize="15" x:Name="txtSurfMatRet" FontWeight="Bold" Text="   " Margin="828,119,430,617"/>
+        <TextBlock  FontSize="15" x:Name="txtSurfMatTotal" FontWeight="Bold" Text="   " Margin="1009,119,208,617"/>
+
+        <!--Base Material Transport-->
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontWeight="Bold" Text="Base Material Transport"  Margin="11,159,0,586"/>
+        <TextBox    x:Name="txtBaseMat" Margin="298,159,960,577" Height="10" Width="108"/>
+        <TextBlock  FontSize="15" x:Name="txtBaseMatMass" FontWeight="Bold" Text="   " Margin="445,159,755,577"/>
+        <TextBlock  FontSize="15" x:Name="txtBaseMatTo" FontWeight="Bold" Text="   " Margin="667,159,602,577"/>
+        <TextBlock  FontSize="15" x:Name="txtBaseMatRet" FontWeight="Bold" Text="   " Margin="828,159,430,577"/>
+        <TextBlock  FontSize="15" x:Name="txtBaseMatTotal" FontWeight="Bold" Text="   " Margin="1009,159,208,577"/>
+
+        <!--Sub-Base Material Transport-->
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontWeight="Bold" Text="Sub-Base  Material Transport"  Margin="11,199,0,549"/>
+        <TextBox x:Name="txtSubBase" Margin="298,199,960,537" Height="10" Width="108"/>
+        <TextBlock  FontSize="15" x:Name="txtSubBaseMass" FontWeight="Bold" Text="   " Margin="445,199,755,537"/>
+        <TextBlock  FontSize="15" x:Name="txtSubBaseTo" FontWeight="Bold" Text="   " Margin="667,199,602,537"/>
+        <TextBlock  FontSize="15" x:Name="txtSubBaseRet" FontWeight="Bold" Text="   " Margin="828,199,430,537"/>
+        <TextBlock  FontSize="15" x:Name="txtSubBaseTotal" FontWeight="Bold" Text="   " Margin="1009,199,208,537"/>
+
+        <!--Geotextile Transport-->
+        <TextBlock HorizontalAlignment="Left" FontSize="18" FontWeight="Bold" Text="Geotextile Transport"  Margin="10,239,0,505"/>
+        <TextBox x:Name="txtGeo" Margin="298,239,960,497" Height="10" Width="108"/>
+        <TextBlock  FontSize="15" x:Name="txtGeoMass" FontWeight="Bold" Text="   " Margin="445,239,755,497"/>
+        <TextBlock  FontSize="15" x:Name="txtGeoTo" FontWeight="Bold" Text="   " Margin="667,239,602,497"/>
+        <TextBlock  FontSize="15" x:Name="txtGeoRet" FontWeight="Bold" Text="   " Margin="828,239,430,497"/>
+        <TextBlock  FontSize="15" x:Name="txtGeoTotal" FontWeight="Bold" Text="   " Margin="1009,239,208,497"/>
+
+
+        <!--Totals-->
+
+        <TextBlock  FontSize="15" x:Name="txtTotalEC" FontWeight="Bold" Text="   " Margin="1009,306,208,430"/>
+        <TextBlock  FontSize="22" FontWeight="Bold" Text="Sub-Totals" Margin="828,306,396,430" Foreground="Chocolate"/>
 
     </Grid>
 </Page>

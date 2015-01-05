@@ -26,5 +26,13 @@ namespace CyclePaths
         {
             this.InitializeComponent();
         }
+        private void HomePage(object sender, RoutedEventArgs e)
+        {
+            Button backButton = new Button();
+            backButton.Content = "HomePage";
+            backButton.Click += HomePage;
+
+            this.Frame.Navigate(typeof(MainPage));
+        }
     }
 }

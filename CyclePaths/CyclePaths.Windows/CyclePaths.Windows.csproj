@@ -107,6 +107,7 @@
     <Content Include="Assets\Bike.jpg" />
     <Content Include="Assets\cyclepath.JPG" />
     <Content Include="Assets\cyclepathLogo.jpg" />
+    <Content Include="Assets\newLogo.jpg" />
     <Content Include="Assets\Paint.jpg" />
     <Content Include="Assets\pathType.png" />
     <Content Include="Assets\Residential Fence.png" />

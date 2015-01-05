@@ -7,7 +7,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="Firebrick">
+        <TextBlock FontSize="45" Foreground="Chocolate" FontStyle="Italic" FontWeight="ExtraBold" Text="Paint" Margin="13,10,1214,702" />
+        <Image Source="Assets/Paint.jpg" Margin="997,151,69,426"/>
+
+        <TextBlock Text="Paint Colour" Margin="17,83,1167,662" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20"/>
+        <TextBlock Text="Distance(m)" FontWeight="ExtraBold" Margin="190,83,994,662" Foreground="Chocolate" FontSize="20"/>
+        <TextBlock Text="Width(m)" FontWeight="ExtraBold" Margin="372,83,812,662" Foreground="Chocolate" FontSize="20"/>
+        <TextBlock Text="Embodied Carbon" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="559,86,614,662" />
+        <TextBlock Text="Cost" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="772,86,512,662" />
+
+        <!--Paint-->
+        <ComboBox Margin="17,110,1201,623" x:Name="ComboPaint" SelectionChanged="ComboPaint_SelectionChanged">
+            <x:String>No Paint</x:String>
+            <x:String>Red</x:String>
+            <x:String>Buff</x:String>
+        </ComboBox>
+        <TextBox Margin="190,111,1030,622" x:Name="txtPaintDist"/>
+        <TextBlock x:Name="txtPaintWidth" Text="" FontSize="18" Margin="378,114,889,633"/>
+        <TextBlock x:Name="txtPaintEC" Text="" FontSize="18" Margin="559,114,675,633"/>
+        <TextBlock x:Name="txtPaintCost" Text="" FontSize="18" Margin="772,114,508,633"/>
+        <TextBlock Text="tCO2e" FontSize="18" Margin="696,114,614,633"/>
+
+        <!--Buttons-->
+        <Button Content="Calculate" Width="160" Height="40" Click="btnCalc"/>
+        <Button Content="Back" Margin="10,702,0,10" Width="155" FontWeight="Bold" FontStyle="Italic" FontSize="15" Click="BackBtn" Height="56" />
+        <Button Content="MainPage" FontWeight="Bold" Width="155" FontStyle="Italic" FontSize="15" Click="mainBtn" Margin="170,702,0,10" Height="56"/>
 
     </Grid>
 </Page>

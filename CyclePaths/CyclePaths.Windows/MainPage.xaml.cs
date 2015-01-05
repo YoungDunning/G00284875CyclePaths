@@ -26,5 +26,23 @@ namespace CyclePaths
         {
             this.InitializeComponent();
         }
+        private void ModicationCosts(object sender, RoutedEventArgs e)
+        {
+            Button ModButton = new Button();
+            ModButton.Content = "Costs and EC";
+            ModButton.Click += ModicationCosts;
+
+            this.Frame.Navigate(typeof(ModificationCosts));
+        }
+
+        private void PathType(object sender, RoutedEventArgs e)
+        {
+            Button StartButton = new Button();
+            StartButton.Content = "Path Type";
+            StartButton.Click += PathType;
+
+            this.Frame.Navigate(typeof(PathType));
+
+        }
     }
 }

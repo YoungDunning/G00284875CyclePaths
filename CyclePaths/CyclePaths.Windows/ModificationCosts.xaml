@@ -6,8 +6,99 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Grid Background="Firebrick">
+        <TextBlock FontSize="40" Foreground="Chocolate" FontStyle="Italic" FontWeight="ExtraBold" Text="Modification of EC and Cost" Margin="0,0,799,712" />
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="EC Material" Margin="24,52,1229,693" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20"/>
+        <TextBlock Text="Costs" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="203,52,1099,696" />
+        <TextBlock Text="Units" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="284,52,1018,696" />
+        <TextBlock Text="EC" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="353,52,949,696" />
+        <TextBlock Text="Unit" FontWeight="ExtraBold" Foreground="Chocolate" FontSize="20" Margin="439,52,863,696" />
+
+        <TextBlock Text="Asphalt" FontSize="15" Margin="24,80,1278,667" Width="64"/>
+        <TextBlock Text="€11.68" FontSize="15" Margin="203,80,1099,667" Width="64"/>
+        <TextBlock Text="Per m2" FontSize="15" Margin="284,80,1018,667" Width="64"/>
+        <TextBlock Text="71.00" FontSize="15" Margin="353,80,949,667" Width="64"/>
+        <TextBlock Text="kgCO2e per tonne of material" FontSize="15" Margin="439,80,723,667"/>
+
+        <TextBlock Text="Type A" Margin="24,106,1278,642" FontSize="15" />
+        <TextBlock Text="€39.69" FontSize="15" Margin="203,106,1099,642" Width="64"/>
+        <TextBlock Text="Per m3" FontSize="15" Margin="284,106,1018,642" Width="64"/>
+        <TextBlock Text="4.54" FontSize="15" Margin="353,106,949,642" Width="64"/>
+        <TextBlock Text="kgCO2e per tonne of material" FontSize="15" Margin="439,106,723,642"/>
+
+        <TextBlock Text="Type B" Margin="24,132,1278,617" FontSize="15"/>
+        <TextBlock Text="€39.69" FontSize="15" Margin="203,132,1099,617" Width="64"/>
+        <TextBlock Text="Per m3" FontSize="15" Margin="284,132,1018,617" Width="64"/>
+        <TextBlock Text="4.58" FontSize="15" Margin="353,132,949,617" Width="64"/>
+        <TextBlock Text="kgCO2e per tonne of material" FontSize="15" Margin="439,132,723,617"/>
+
+        <TextBlock Text="Geotextile" Margin="24,158,1269,593" FontSize="15"/>
+        <TextBlock Text="€2.47" FontSize="15" Margin="203,158,1099,593" Width="64"/>
+        <TextBlock Text="Per m2" FontSize="15" Margin="284,158,1018,591" Width="64"/>
+        <TextBlock Text="3,430.00" FontSize="15" Margin="353,158,949,591" Width="64"/>
+        <TextBlock Text="kgCO2e per tonne of material" FontSize="15" Margin="439,158,723,591"/>
+
+        <TextBlock Text="Buff Paint" Margin="24,184,1278,563" FontSize="15"/>
+        <TextBlock Text="€19.00" FontSize="15" Margin="203,184,1099,570" Width="64"/>
+        <TextBlock Text="Per m2" FontSize="15" Margin="284,184,1018,570" Width="64"/>
+        <TextBlock Text="3.7652" FontSize="15" Margin="353,184,949,570" Width="64"/>
+        <TextBlock Text="kgCO2e per m2" FontSize="15" Margin="439,184,723,570"/>
+
+        <TextBlock Text="Red Paint" Margin="24,210,1278,537" FontSize="15"/>
+        <TextBlock Text="€19.00" FontSize="15" Margin="203,210,1099,544" Width="64"/>
+        <TextBlock Text="Per m2" FontSize="15" Margin="284,210,1018,544" Width="64"/>
+        <TextBlock Text="3.7652" FontSize="15" Margin="353,210,949,544" Width="64"/>
+        <TextBlock Text="kgCO2e per m2" FontSize="15" Margin="439,210,723,537"/>
+
+        <TextBlock Text="Steel Guardrail" Margin="24,236,1242,511" FontSize="15"/>
+        <TextBlock Text="€45.93" FontSize="15" Margin="203,236,1099,511" Width="64"/>
+        <TextBlock Text="Per m" FontSize="15" Margin="284,236,1018,511" Width="64"/>
+        <TextBlock Text="29.10" FontSize="15" Margin="353,236,949,511" Width="64"/>
+        <TextBlock Text="kgCO2e per metre" FontSize="15" Margin="439,236,723,511"/>
+
+        <TextBlock Text="Rumble Strip" Margin="24,262,1256,485" FontSize="15"/>
+        <TextBlock Text="€2.90" FontSize="15" Margin="203,262,1099,485" Width="64"/>
+        <TextBlock Text="Per m" FontSize="15" Margin="284,262,1018,485" Width="64"/>
+        <TextBlock Text="11.5900" FontSize="15" Margin="353,262,949,485" Width="64"/>
+        <TextBlock Text="kgCO2e per metre" FontSize="15" Margin="439,262,723,485"/>
+
+        <TextBlock Text="Sign" Margin="24,288,1256,459" FontSize="15"/>
+        <TextBlock Text="€205.38" FontSize="15" Margin="203,288,1099,459" Width="64"/>
+        <TextBlock Text="Per sign" FontSize="15" Margin="284,288,1018,459" Width="64"/>
+        <TextBlock Text="29.1000" FontSize="15" Margin="353,288,949,459" Width="64"/>
+        <TextBlock Text="kgCO2e per sign" FontSize="15" Margin="439,288,723,459"/>
+
+        <TextBlock Text="Residential Timber Fence" Margin="24,314,1175,433" FontSize="15"/>
+        <TextBlock Text="€33.50" FontSize="15" Margin="203,314,1099,433" Width="64"/>
+        <TextBlock Text="Per m" FontSize="15" Margin="284,314,1018,433" Width="64"/>
+        <TextBlock Text="19.6812" FontSize="15" Margin="353,314,949,433" Width="64"/>
+        <TextBlock Text="kgCO2e per metre" FontSize="15" Margin="439,314,723,433"/>
+
+        <TextBlock Text="Agricultural Fence" Margin="24,340,1205,407" FontSize="15"/>
+        <TextBlock Text="€4.50" FontSize="15" Margin="203,340,1099,407" Width="64"/>
+        <TextBlock Text="Per m" FontSize="15" Margin="284,340,1018,407" Width="64"/>
+        <TextBlock Text="5.300" FontSize="15" Margin="353,340,949,407" Width="64"/>
+        <TextBlock Text="kgCO2e per metre" FontSize="15" Margin="439,340,723,407"/>
+
+        <TextBlock Text="Timber Post and Rail" Margin="24,366,1195,381" FontSize="15"/>
+        <TextBlock Text="€14.00" FontSize="15" Margin="203,366,1099,381" Width="64"/>
+        <TextBlock Text="Per m" FontSize="15" Margin="284,366,1018,381" Width="64"/>
+        <TextBlock Text="9.8100" FontSize="15" Margin="353,366,949,381" Width="64"/>
+        <TextBlock Text="kgCO2e per metre" FontSize="15" Margin="439,366,723,381"/>
+
+        <TextBlock Text="Mesh/Concrete Fence" Margin="24,392,1195,355" FontSize="15"/>
+        <TextBlock Text="€10.00" FontSize="15" Margin="203,392,1099,355" Width="64"/>
+        <TextBlock Text="Per m" FontSize="15" Margin="284,392,1018,355" Width="64"/>
+        <TextBlock Text="15.5400" FontSize="15" Margin="353,392,949,355" Width="64"/>
+        <TextBlock Text="kgCO2e per metre" FontSize="15" Margin="439,392,723,355"/>
+
+        <!--Videos-->
+        <TextBlock HorizontalAlignment="Left" Text="Video Section" VerticalAlignment="Top" Margin="942,80,0,0" FontSize="20" Foreground="Chocolate" FontWeight="Bold"  Width="145"/>
+        <HyperlinkButton Content="Discover Ireland" HorizontalAlignment="Left" Margin="943,101,0,0" Foreground="White" VerticalAlignment="Top" NavigateUri="https://www.youtube.com/watch?v=xn8gRbr279c"/>
+        <HyperlinkButton Content="Great Western Greenway" HorizontalAlignment="Left" Margin="943,133,0,0" Foreground="White" VerticalAlignment="Top" NavigateUri="https://www.youtube.com/watch?v=DOFbkXNgMJs" />
+
+        <Button Content="Back" Click="HomePage" Margin="20,511,0,199" Width="118"/>
 
     </Grid>
 </Page>

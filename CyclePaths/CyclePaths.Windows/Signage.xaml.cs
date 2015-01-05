@@ -22,9 +22,55 @@ namespace CyclePaths
     /// </summary>
     public sealed partial class Signage : Page
     {
+        double sign, signEC, signCost;
+        double signUnitEC = 29.1, signUnitCost = 205.38;
+
         public Signage()
         {
             this.InitializeComponent();
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+        }
+        public class AnotherPagePayLoad
+        {
+            public double signEC { get; set; }
+            public double signCost { get; set; }
+        }
+        private void paintBtn(object sender, RoutedEventArgs e)
+        {
+            Button PaintButton = new Button();
+            PaintButton.Content = "Paint Button";
+            PaintButton.Click += paintBtn;
+
+            AnotherPagePayLoad payload = new AnotherPagePayLoad();
+            payload.signCost = signCost;
+            payload.signEC = signEC;
+
+            this.Frame.Navigate(typeof(Paint), payload);
+        }
+
+        private void BackBtn(object sender, RoutedEventArgs e)
+        {
+            Button BackButton = new Button();
+            BackButton.Content = "Back Button";
+            BackButton.Click += BackBtn;
+
+            this.Frame.Navigate(typeof(Guardrails));
+        }
+
+
+
+        private void btnCalc(object sender, RoutedEventArgs e)
+        {
+            sign = Convert.ToDouble(txtSignNum.Text);
+            signEC = sign * (signUnitEC / 1000);
+            signCost = sign * signUnitCost;
+
+            txtSignEC.Text = signEC.ToString("F2");
+            txtSignCost.Text = signCost.ToString("c");
+        }
+
+
     }
 }
